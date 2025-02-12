@@ -1,5 +1,13 @@
 def fizz_buzz(number)
-  # ここにFizzBuzzプログラムの処理を書いてください
+  if number % 21 == 0 # ここにFizzBuzzプログラムの処理を書いてください
+    "FizzBuzz"
+  elsif number % 3 == 0
+    "Fizz"
+  elsif number % 7 == 0
+    "Buzz"
+  else 
+    number.to_s  
+  end
 end
 
 puts "数字を入力してください。"
