@@ -1,8 +1,10 @@
-let i;
-let num = 0;
+let alertString;
 
-for(i = 1; i < 11; i++){
-  num = num + i;
+let promptStr = prompt('何か好きな文字を入力してください。');
+
+alert(promptStr);
+
+function addString(strA){
+  let addStr = "Hello " + strA;
+  return addStr;
 }
-
-alert('1から10まで足し算した結果は' + num + 'です');
